@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  font-family: Apple SD Gothic Neo;
+}
+img{
+  max-width: 100%;
+  width: 100%;
+}
+a{
+  text-decoration: none;
+}
+
+.title{
+  font-size: 36px;
+  line-height: 40px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.banner-box{
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.banner{
+  width: 2020px;
+}
+
+.header-section{
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 24px 20px 14px;
+}
+.header-section .logo{
+  width: 100px;
+}
+.header-section .nav-area{
+  margin: 20px -20px 8px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.header-section .nav-link-area {
+  width: 500px;
+  padding-left: 20px;
+}
+.header-section .nav-link-area .btn-link {
+  display: inline-block;
+  padding: 9px 20px 8px;
+  color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  text-align: center;
+  margin-right: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.header-section .nav-link-area .btn-link.on,
+.header-section .nav-link-area .btn-link:hover {
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.main-banner-section {
+  padding-top: 115px;
+  background: radial-gradient(
+    72.24% 73.35% at 11.2% 10.73%,
+    #ff99a1 0.01%,
+    #d561ff 63.02%,
+    #a839ff 100%
+  );
+}
+.main-banner-section .main-banner img {
+  vertical-align: bottom;
+}
+
+.menu-section {
+  background-color: #fff;
+  border-bottom: 1px solid #fafafa;
+  padding: 24px 36px 24px;
+}
+.menu-section .menu {
+  overflow: hidden;
+}
+.menu-section .menu li {
+  width: 25%;
+  float: left;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.menu-section .menu li img {
+  width: 36px;
+  height: 36px;
+}
+.menu-section .menu li .btn-menu {
+  display: inline-block;
+}
+.menu-section .menu li .menu-text {
+  margin-top: 4px;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.place-banner-section{
+  padding: 24px 20px 14px;
+}
+.place-banner-section .banner li{
+  padding: 10px 10px 10px 0px;
+  margin-top: 20px;
+  float: left;
+}
+.place-banner-section .banner li img{
+  width: 284px;
+  height: 284px;
+}
+.place-banner-section .banner li .link-place-banner{
+  display: inline-block;
+}
+.banner li .nav-area{
+  width: 23%;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  margin-right: 8px;
+  border-radius: 50px;
+}
+.banner li .place-banner-btn{
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+ } 
+.place-banner-section .banner li .place-banner-text{
+  width: 284px;
+  margin-top: 4px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+}
+.place-banner-section .banner li .place-banner-text:hover{
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.event-banner-section{
+  width: 100%;
+  height: 100%;
+}
+
+.today-sale-section{
+  padding: 24px 20px 14px;
+}
+
+.new-place-banner-section{
+  padding: 24px 20px 14px;
+} 
+.new-place-banner-section .banner li{
+  padding: 10px 10px 10px 0px;
+  margin-top: 20px;
+  float: left;
+}
+.new-place-banner-section .banner li img{
+  width: 284px;
+  height: 284px;
+}
+.new-place-banner-section .banner li .link-new-place-banner{
+  display: inline-block;
+}
+.new-place-banner-section .banner li .nav-area{
+  width: 25%;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  margin-right: 8px;
+  border-radius: 50px;
+}
+.new-place-banner-section .banner li .new-place-banner-btn{
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+ }
+
+.new-place-banner-section .banner li .new-place-banner-text{
+  width: 284px;
+  margin-top: 4px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+}
+.new-place-banner-section .banner li .new-place-banner-text:hover{
+  color: rgba(0, 0, 0, 0.2);
+}
+/*
+기존 코드
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  font-family: Apple SD Gothic Neo;
+}
+
+img{
+  max-width: 100%;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav{
+  width: 500px;
+  padding-left: 20px;
+}
+
+.header-section{
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 24px 20px 14px;
+}
+
+.btn{
+  /* Button_box 
+  height: 36px;
+  top: 20%;
+  color: #fff;
+  cursor: pointer;
+  transition: .4s;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.btn:hover{
+  background-color: #333;
+  color:white;
+}
+
+.btn_home{
+  width: 54px;
+}
+
+.btn_hot-place{
+  width: 120px;
+  margin-left: 18%;
+}
+
+.btn_event{
+  width: 80px;
+  margin-left: 55%;
+}
+
+
+.header-section .logo{
+  width: 100px;
+}
+
+.header-section .main-banner img{
+  vertical-align: bottom;
+}
+
+.menu{
+  position: relative;
+  max-width: 640px;
+  height: 172px;
+  font-size: 13px;
+  text-align: center;
+  /* color: rgba(0, 0, 0, 0.4); 
+}
+
+.menu a{
+  position: absolute;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 5%;
+}
+
+.menu .home{
+  left: 5%;
+}
+
+.menu .cut{
+  left: 30%;
+}
+
+.menu .tour{
+  right: 28%;
+}
+
+.menu .exercise{
+  right: 5%;
+}
+
+.menu .cafe{
+  left: 5%;
+  bottom: 0;
+}
+
+.menu .food{
+  left: 30%;
+  bottom: 0;
+}
+
+.menu .hotel{
+  right: 30%;
+  bottom: 0;
+}
+
+.menu .more{
+  right: 5%;
+  bottom: 0;
+} 
+*/
