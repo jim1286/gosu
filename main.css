@@ -99,8 +99,8 @@ a{
 }
 .menu-section .menu li {
   width: 25%;
-  float: left;
   display: inline-block;
+  float: left;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -242,6 +242,7 @@ a{
 /* new-place */
 .new-place-banner-section{
   padding: 24px 20px 14px;
+  padding-bottom: 300px;
 } 
 .new-place-banner-section .banner li{
   padding: 10px 10px 10px 0px;
@@ -284,23 +285,24 @@ a{
 
 /* bottom-menu */
 .bottom-menu-section{
-  /* position: fixed; */
+  position: fixed;
+  bottom: 0px;
+}
+.bottom-menu-section .bottom-menu-bar{
   width: 640px;
   height: 240px;
   background: #FFFFFF;
   box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.15);
   border-radius: 20px 20px 0px 0px;
 }
-.bottom-menu-section .bottom-menu-bar{
-  /* position: fixed; */
-}
 .bottom-menu-section .bottom-menu-bar li{
   display: inline-block;
   margin: 10px;
   padding-top: 30px;
-  padding-left: 10px;
+  padding-left: 15px;
   width: 15%;
   text-align: center;
+  /* background-color: blueviolet; */
 }
 .bottom-menu-section .bottom-menu-bar li .bottom-menu-btn{
   display: inline-block;
@@ -319,8 +321,8 @@ a{
 }
 .bottom-menu-section .bottom-menu-nav-bar img{
   /* 왜 안될까요..?? */
-  vertical-align: bottom;
-  margin-top: 20px; 
+  /* vertical-align: bottom; */
+  margin-top: 20px;
 }
 
 /*
