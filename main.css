@@ -1,10 +1,12 @@
 /*
 질문들
-1. 버튼 만들때 글자 길이에 따라 버튼 크기도 달라지는데 각각 버튼을 구성해주어야 하는지?
-2. overflow-x = scroll 을 특정부분 까지만 할수 있도록 할수 있는지?
-3. vertical-align: bottom; 이 header에서는 되고 bottom-menu에서는 왜 안되는지?
+1. 버튼 만들때 글자 길이에 따라 버튼 크기도 달라지는데 각각 버튼을 구성해주어야 하는지? --> padding으로 구성하면 된다.
+2. overflow-x = scroll 을 특정부분 까지만 할수 있도록 할수 있는지? --> javascript로 하면 된다.
+3. vertical-align: bottom; 이 header에서는 되고 bottom-menu에서는 왜 안되는지? 
 4. position: fixed를 하면 왜 사라지는지
+5. 밑에 position:fixed는 margin값을 줘야지만 되나? --> section의 height 값만큼 margin값을 줘야한다.
 */
+
 
 * {
   box-sizing: border-box;
@@ -242,7 +244,7 @@ a{
 /* new-place */
 .new-place-banner-section{
   padding: 24px 20px 14px;
-  padding-bottom: 300px;
+  padding-bottom: 100px;
 } 
 .new-place-banner-section .banner li{
   padding: 10px 10px 10px 0px;
@@ -287,20 +289,24 @@ a{
 .bottom-menu-section{
   position: fixed;
   bottom: 0px;
+  max-width: 640px;
+  width: 100%;
 }
 .bottom-menu-section .bottom-menu-bar{
-  width: 640px;
-  height: 240px;
+  clear: both;
+  overflow: hidden;
   background: #FFFFFF;
   box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.15);
   border-radius: 20px 20px 0px 0px;
+  padding: 18px 20px 12px;
 }
 .bottom-menu-section .bottom-menu-bar li{
   display: inline-block;
-  margin: 10px;
-  padding-top: 30px;
-  padding-left: 15px;
-  width: 15%;
+  /* margin: 10px; */
+  /* padding-top: 30px; */
+  /* padding-left: 15px; */
+  float: left;
+  width: 20%;
   text-align: center;
   /* background-color: blueviolet; */
 }
@@ -308,13 +314,13 @@ a{
   display: inline-block;
 }
 .bottom-menu-section .bottom-menu-bar li .bottom-menu-btn img{
-  height: 48px;
-  width: 48px;
+  height: 24px;
+  width: 24px;
 }
 .bottom-menu-section .bottom-menu-bar li .bottom-menu-text{
   display: block;
   color: gray;
-  font-size: 18px;
+  font-size: 12px;
 }
 .bottom-menu-section .bottom-menu-bar li .bottom-menu-text:hover{
   color: black;
@@ -322,7 +328,7 @@ a{
 .bottom-menu-section .bottom-menu-nav-bar img{
   /* 왜 안될까요..?? */
   /* vertical-align: bottom; */
-  margin-top: 20px;
+  /* margin-top: 40px; */
 }
 
 /*
